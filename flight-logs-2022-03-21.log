@@ -1,0 +1,196 @@
+2022-03-21 01:50:45,633:AnonymusFacade:login:29516:29444:INFO:--Sucsses-- the password is match for user "Nanos"
+2022-03-21 01:50:58,631:AnonymusFacade:login:29008:12728:INFO:--Sucsses-- the password is match for user "Nanos"
+2022-03-21 01:50:58,631:AnonymusFacade:login:29008:12728:INFO:--Sucsses-- the user "Nanos" transferred to Customer Facade  
+2022-03-21 01:51:58,679:AnonymusFacade:login:26344:8752:INFO:--Sucsses-- the password is match for user "Nanos"
+2022-03-21 01:51:58,679:AnonymusFacade:login:26344:8752:INFO:--Sucsses-- the user "Nanos" transferred to Customer Facade  
+2022-03-21 01:54:57,176:AnonymusFacade:login:15224:6380:INFO:--Sucsses-- the password is match for user "Nanos"
+2022-03-21 01:54:57,176:AnonymusFacade:login:15224:6380:INFO:--Sucsses-- the user "Nanos" transferred to Customer Facade  
+2022-03-21 01:54:57,364:CustomerFacade:get_my_tickets:15224:6380:INFO:--SUCCESS--  get ticket by customer Shlomi  id  1 is finish Successfully
+2022-03-21 01:55:00,526:CustomerFacade:remove_ticket:15224:6380:DEBUG:removing ticket by Shlomi id 1 is about to happen.
+2022-03-21 01:55:00,530:CustomerFacade:remove_ticket:15224:6380:INFO:--SUCCESS--  remove ticket by Shlomi id 1 for customer id  Ticket.customer_id to flight 1 is finish Successfully
+2022-03-21 01:55:00,530:CustomerFacade:remove_ticket:15224:6380:DEBUG:there is more 24 ticket for flight 1
+2022-03-21 01:55:06,886:CustomerFacade:remove_ticket:15224:6380:ERROR:--FAILED--   Shlomi, id 1 trying to remove ticket id 5  but we cant find this ticket
+2022-03-21 01:55:10,064:CustomerFacade:add_ticket:15224:6380:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 01:55:10,064:CustomerFacade:add_ticket:15224:6380:ERROR:--FAILED--  adding ticket by Shlomi, id 1, role2  for flight NO. 4, because we cant find this flight
+2022-03-21 01:55:13,249:CustomerFacade:add_ticket:15224:6380:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 01:55:13,249:CustomerFacade:add_ticket:15224:6380:INFO:--FAILED--  adding ticket by Shlomi, id 1, role2  for flight NO. 2, because no more tickets are available for this flight
+2022-03-21 01:55:16,418:CustomerFacade:add_ticket:15224:6380:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 01:55:19,596:CustomerFacade:add_ticket:15224:6380:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 01:55:19,596:CustomerFacade:add_ticket:15224:6380:INFO:--SUCCESS-- Shlomi 1 adding ticket for customer id  1 to flight 3 is finish Successfully
+2022-03-21 01:55:19,596:CustomerFacade:add_ticket:15224:6380:DEBUG:there is more 64 ticket for flight 3
+2022-03-21 02:05:02,011:AnonymusFacade:login:17768:12164:INFO:--Sucsses-- the password is match for user "turkish"
+2022-03-21 02:05:02,011:AnonymusFacade:login:17768:12164:INFO:--Sucsses-- the user "turkish" transferred to Airline Facade  
+2022-03-21 02:05:02,168:AirLineFacade:get_my_flights:17768:12164:DEBUG:get flight by airline, for airline company id  2 is about to happen
+2022-03-21 02:05:02,168:AirLineFacade:get_my_flights:17768:12164:INFO:--SUCCESS--  get flights by airline company Turkish AirLine  id  2 is finish Successfully
+2022-03-21 02:05:05,358:AirLineFacade:update_airline:17768:12164:DEBUG:update airline is about to happen
+2022-03-21 02:05:08,516:AirLineFacade:update_airline:17768:12164:DEBUG:update airline is about to happen
+2022-03-21 02:05:08,516:AirLineFacade:update_airline:17768:12164:ERROR:--FAILED--  update by  airline id  2 failed because  airline company  name  Deltais alredy exists.
+2022-03-21 02:05:11,702:AirLineFacade:add_flight:17768:12164:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:05:14,896:AirLineFacade:add_flight:17768:12164:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:05:14,896:AirLineFacade:add_flight:17768:12164:ERROR:--FAILED--  update by  flight id  None failed because  the origin country 3 did not exist in our country DB
+2022-03-21 02:05:18,074:AirLineFacade:add_flight:17768:12164:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:05:18,074:AirLineFacade:add_flight:17768:12164:ERROR:--FAILED--  update by  flight id  None failed because  the destination country 4 did not exist in our country DB
+2022-03-21 02:05:21,236:AirLineFacade:add_flight:17768:12164:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:05:21,236:AirLineFacade:add_flight:17768:12164:ERROR:--FAILED--  update by  flight id  None failed because  this destination country id  2and origin country id cant be the same
+2022-03-21 02:05:24,415:AirLineFacade:add_flight:17768:12164:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:05:24,415:AirLineFacade:add_flight:17768:12164:ERROR:--FAILED--  update by  flight id  2 failed because  flight cant landing before departure.  departure time: 2022-03-30 21:00:00 ,landing time: 2022-03-28 16:00:00
+2022-03-21 02:05:34,001:AirLineFacade:update_flight:17768:12164:DEBUG:update flight number None is about to happen
+2022-03-21 02:05:34,001:AirLineFacade:update_flight:17768:12164:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:05:37,169:AirLineFacade:update_flight:17768:12164:DEBUG:update flight number None is about to happen
+2022-03-21 02:05:37,169:AirLineFacade:update_flight:17768:12164:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:05:40,361:AirLineFacade:update_flight:17768:12164:DEBUG:update flight number None is about to happen
+2022-03-21 02:05:40,361:AirLineFacade:update_flight:17768:12164:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:05:43,558:AirLineFacade:update_flight:17768:12164:DEBUG:update flight number 2 is about to happen
+2022-03-21 02:05:43,558:AirLineFacade:update_flight:17768:12164:ERROR:--FAILED--  update by  flight id  2 failed because  flight cant landing before departure.  departure time: 2022-03-30 21:00:00 ,landing time: 2022-03-28 16:00:00
+2022-03-21 02:05:46,734:AirLineFacade:update_flight:17768:12164:DEBUG:update flight number None is about to happen
+2022-03-21 02:05:46,734:AirLineFacade:update_flight:17768:12164:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:05:49,934:AirLineFacade:remove_flight:17768:12164:DEBUG:remove flight is about to happen
+2022-03-21 02:05:49,934:AirLineFacade:remove_flight:17768:12164:ERROR:--FAILED--    we cant find  flight number 4
+2022-03-21 02:05:53,114:AirLineFacade:remove_flight:17768:12164:DEBUG:remove flight is about to happen
+2022-03-21 02:05:53,114:AirLineFacade:remove_flight:17768:12164:INFO:--Sucsses--  flight  id 2 is removed
+2022-03-21 02:17:09,688:AnonymusFacade:login:4716:29880:INFO:--Sucsses-- the password is match for user "Moti5k"
+2022-03-21 02:17:09,688:AnonymusFacade:login:4716:29880:INFO:--Sucsses-- the user "Moti5k" transferred to Admin Facade  
+2022-03-21 02:17:09,844:AdministratorFacade:get_all_customers:4716:29880:DEBUG:get all customer"s is about to happen
+2022-03-21 02:17:32,273:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:32,273:AdministratorFacade:remove_airline:4716:29880:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:17:35,447:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:35,447:AdministratorFacade:remove_airline:4716:29880:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:17:38,630:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:38,630:AdministratorFacade:remove_airline:4716:29880:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:17:41,808:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:41,808:AdministratorFacade:remove_airline:4716:29880:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:17:44,985:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:44,985:AdministratorFacade:remove_airline:4716:29880:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:17:48,156:AdministratorFacade:remove_airline:4716:29880:DEBUG:remove airline is about to happen
+2022-03-21 02:17:48,156:AdministratorFacade:remove_airline:4716:29880:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:18:54,347:AnonymusFacade:login:20028:27716:INFO:--Sucsses-- the password is match for user "Moti5k"
+2022-03-21 02:18:54,347:AnonymusFacade:login:20028:27716:INFO:--Sucsses-- the user "Moti5k" transferred to Admin Facade  
+2022-03-21 02:18:54,500:AdministratorFacade:get_all_customers:20028:27716:DEBUG:get all customer"s is about to happen
+2022-03-21 02:18:57,694:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "arkia"  was created successfully, his details:   user id:7 email:arkia@gmail.com, user role:1  
+2022-03-21 02:18:57,694:AdministratorFacade:create_airline:20028:27716:DEBUG:add new airline is about to happen
+2022-03-21 02:18:57,694:AdministratorFacade:create_airline:20028:27716:INFO: User created: 
+<id=7 username=arkia password=arki email=arkia@gmail.com         user_role=1 >, Airline created: 
+<id=3 name=arkia country_id=1 user_id=7 >
+2022-03-21 02:19:00,898:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "tu"  was created successfully, his details:   user id:7 email:turkishhhhhh@gmail.com, user role:1  
+2022-03-21 02:19:00,898:AdministratorFacade:create_airline:20028:27716:DEBUG:add new airline is about to happen
+2022-03-21 02:19:00,898:AdministratorFacade:create_airline:20028:27716:ERROR:--FAILED--  Delta we already have Airline company with this name
+2022-03-21 02:19:04,080:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:19:04,080:AdministratorFacade:create_customer:20028:27716:DEBUG:adding customer is about to happen
+2022-03-21 02:19:04,080:AdministratorFacade:create_customer:20028:27716:INFO:--Sucsses--  User created: 
+<id=7 username=efi password=123 email=efi@gmail.com         user_role=2 >, Administrator created: 
+<id=3 first_name=efi last_name=yoni address=None         phone_number=1234343 credit_card_no=4580260111110973 user_id=7>
+2022-03-21 02:19:07,280:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:19:07,280:AdministratorFacade:create_customer:20028:27716:DEBUG:adding customer is about to happen
+2022-03-21 02:19:07,280:AdministratorFacade:create_customer:20028:27716:ERROR:--FAILED--  None a customer with the same Phone number 0502111201is alredy exists.
+2022-03-21 02:19:10,474:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:19:10,474:AdministratorFacade:create_customer:20028:27716:DEBUG:adding customer is about to happen
+2022-03-21 02:19:10,474:AdministratorFacade:create_customer:20028:27716:ERROR:--FAILED--  None a customer with the Credit card  number 45802601is alredy exists.
+2022-03-21 02:19:13,650:BaseFacade:create_new_user:20028:27716:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:3  
+2022-03-21 02:19:13,650:AdministratorFacade:create_admin:20028:27716:DEBUG:add new admin is about to happen
+2022-03-21 02:19:13,650:AdministratorFacade:create_admin:20028:27716:INFO:--Sucsses--  User created: 
+<id=7 username=efi password=123 email=efi@gmail.com         user_role=3 >, Administrator created: 
+<id=3 first_name=efi last_name=yoni address=None         phone_number=None credit_card_no=None user_id=7>
+2022-03-21 02:19:16,872:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:16,872:AdministratorFacade:remove_airline:20028:27716:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:19:20,052:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:20,052:AdministratorFacade:remove_airline:20028:27716:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:19:23,248:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:23,248:AdministratorFacade:remove_airline:20028:27716:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:19:26,436:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:26,436:AdministratorFacade:remove_airline:20028:27716:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:19:29,622:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:29,622:AdministratorFacade:remove_airline:20028:27716:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:19:32,802:AdministratorFacade:remove_airline:20028:27716:DEBUG:remove airline is about to happen
+2022-03-21 02:19:32,802:AdministratorFacade:remove_airline:20028:27716:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:20:15,864:AnonymusFacade:login:25456:15284:INFO:--Sucsses-- the password is match for user "turkish"
+2022-03-21 02:22:06,800:AnonymusFacade:login:17712:24284:INFO:--Sucsses-- the password is match for user "turkish"
+2022-03-21 02:22:58,525:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the password is match for user "turkish"
+2022-03-21 02:22:58,525:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the user "turkish" transferred to Airline Facade  
+2022-03-21 02:23:01,693:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the password is match for user "pninosh"
+2022-03-21 02:23:01,693:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the user "pninosh" transferred to Customer Facade  
+2022-03-21 02:23:04,870:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the password is match for user "Moti5k"
+2022-03-21 02:23:04,870:AnonymusFacade:login:636:5880:INFO:--Sucsses-- the user "Moti5k" transferred to Admin Facade  
+2022-03-21 02:23:14,774:AnonymusFacade:login:6908:25388:INFO:--Sucsses-- the password is match for user "Nanos"
+2022-03-21 02:23:14,774:AnonymusFacade:login:6908:25388:INFO:--Sucsses-- the user "Nanos" transferred to Customer Facade  
+2022-03-21 02:23:14,930:CustomerFacade:get_my_tickets:6908:25388:INFO:--SUCCESS--  get ticket by customer Shlomi  id  1 is finish Successfully
+2022-03-21 02:23:18,097:CustomerFacade:remove_ticket:6908:25388:DEBUG:removing ticket by Shlomi id 1 is about to happen.
+2022-03-21 02:23:18,097:CustomerFacade:remove_ticket:6908:25388:INFO:--SUCCESS--  remove ticket by Shlomi id 1 for customer id  Ticket.customer_id to flight 1 is finish Successfully
+2022-03-21 02:23:18,097:CustomerFacade:remove_ticket:6908:25388:DEBUG:there is more 24 ticket for flight 1
+2022-03-21 02:23:24,461:CustomerFacade:remove_ticket:6908:25388:ERROR:--FAILED--   Shlomi, id 1 trying to remove ticket id 5  but we cant find this ticket
+2022-03-21 02:23:27,651:CustomerFacade:add_ticket:6908:25388:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 02:23:27,651:CustomerFacade:add_ticket:6908:25388:ERROR:--FAILED--  adding ticket by Shlomi, id 1, role2  for flight NO. 4, because we cant find this flight
+2022-03-21 02:23:30,843:CustomerFacade:add_ticket:6908:25388:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 02:23:30,843:CustomerFacade:add_ticket:6908:25388:INFO:--FAILED--  adding ticket by Shlomi, id 1, role2  for flight NO. 2, because no more tickets are available for this flight
+2022-03-21 02:23:34,015:CustomerFacade:add_ticket:6908:25388:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 02:23:37,189:CustomerFacade:add_ticket:6908:25388:DEBUG:adding ticket by Shlomi, id 1, role2 is about to happen
+2022-03-21 02:23:37,189:CustomerFacade:add_ticket:6908:25388:INFO:--SUCCESS-- Shlomi 1 adding ticket for customer id  1 to flight 3 is finish Successfully
+2022-03-21 02:23:37,189:CustomerFacade:add_ticket:6908:25388:DEBUG:there is more 64 ticket for flight 3
+2022-03-21 02:35:03,876:AnonymusFacade:login:13636:24424:INFO:--Sucsses-- the password is match for user "turkish"
+2022-03-21 02:35:03,876:AnonymusFacade:login:13636:24424:INFO:--Sucsses-- the user "turkish" transferred to Airline Facade  
+2022-03-21 02:35:04,048:AirLineFacade:get_my_flights:13636:24424:DEBUG:get flight by airline, for airline company id  2 is about to happen
+2022-03-21 02:35:04,048:AirLineFacade:get_my_flights:13636:24424:INFO:--SUCCESS--  get flights by airline company Turkish AirLine  id  2 is finish Successfully
+2022-03-21 02:35:07,239:AirLineFacade:update_airline:13636:24424:DEBUG:update airline is about to happen
+2022-03-21 02:35:10,435:AirLineFacade:update_airline:13636:24424:DEBUG:update airline is about to happen
+2022-03-21 02:35:10,435:AirLineFacade:update_airline:13636:24424:ERROR:--FAILED--  update by  airline id  2 failed because  airline company  name  Deltais alredy exists.
+2022-03-21 02:35:13,621:AirLineFacade:add_flight:13636:24424:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:35:16,837:AirLineFacade:add_flight:13636:24424:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:35:16,839:AirLineFacade:add_flight:13636:24424:ERROR:--FAILED--  update by  flight id  None failed because  the origin country 3 did not exist in our country DB
+2022-03-21 02:35:20,027:AirLineFacade:add_flight:13636:24424:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:35:20,030:AirLineFacade:add_flight:13636:24424:ERROR:--FAILED--  update by  flight id  None failed because  the destination country 4 did not exist in our country DB
+2022-03-21 02:35:23,190:AirLineFacade:add_flight:13636:24424:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:35:23,190:AirLineFacade:add_flight:13636:24424:ERROR:--FAILED--  update by  flight id  None failed because  this destination country id  2and origin country id cant be the same
+2022-03-21 02:35:26,416:AirLineFacade:add_flight:13636:24424:DEBUG:add new flight for airline company Turkish AirLine id 2 is about to happen
+2022-03-21 02:35:26,419:AirLineFacade:add_flight:13636:24424:ERROR:--FAILED--  update by  flight id  2 failed because  flight cant landing before departure.  departure time: 2022-03-30 21:00:00 ,landing time: 2022-03-28 16:00:00
+2022-03-21 02:35:35,977:AirLineFacade:update_flight:13636:24424:DEBUG:update flight number None is about to happen
+2022-03-21 02:35:35,977:AirLineFacade:update_flight:13636:24424:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:35:39,191:AirLineFacade:update_flight:13636:24424:DEBUG:update flight number None is about to happen
+2022-03-21 02:35:39,194:AirLineFacade:update_flight:13636:24424:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:35:42,395:AirLineFacade:update_flight:13636:24424:DEBUG:update flight number None is about to happen
+2022-03-21 02:35:42,398:AirLineFacade:update_flight:13636:24424:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:35:45,563:AirLineFacade:update_flight:13636:24424:DEBUG:update flight number 2 is about to happen
+2022-03-21 02:35:45,566:AirLineFacade:update_flight:13636:24424:ERROR:--FAILED--  update by  flight id  2 failed because  flight cant landing before departure.  departure time: 2022-03-30 21:00:00 ,landing time: 2022-03-28 16:00:00
+2022-03-21 02:35:48,760:AirLineFacade:update_flight:13636:24424:DEBUG:update flight number None is about to happen
+2022-03-21 02:35:48,760:AirLineFacade:update_flight:13636:24424:ERROR:--FAILED--  we cant find flight number  None 
+2022-03-21 02:35:51,943:AirLineFacade:remove_flight:13636:24424:DEBUG:remove flight is about to happen
+2022-03-21 02:35:51,946:AirLineFacade:remove_flight:13636:24424:ERROR:--FAILED--    we cant find  flight number 4
+2022-03-21 02:35:55,134:AirLineFacade:remove_flight:13636:24424:DEBUG:remove flight is about to happen
+2022-03-21 02:35:55,137:AirLineFacade:remove_flight:13636:24424:INFO:--Sucsses--  flight  id 2 is removed
+2022-03-21 02:36:11,958:AnonymusFacade:login:9412:20756:INFO:--Sucsses-- the password is match for user "Moti5k"
+2022-03-21 02:36:11,968:AnonymusFacade:login:9412:20756:INFO:--Sucsses-- the user "Moti5k" transferred to Admin Facade  
+2022-03-21 02:36:12,128:AdministratorFacade:get_all_customers:9412:20756:DEBUG:get all customer"s is about to happen
+2022-03-21 02:36:15,310:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "arkia"  was created successfully, his details:   user id:7 email:arkia@gmail.com, user role:1  
+2022-03-21 02:36:15,310:AdministratorFacade:create_airline:9412:20756:DEBUG:add new airline is about to happen
+2022-03-21 02:36:15,316:AdministratorFacade:create_airline:9412:20756:INFO: User created: 
+<id=7 username=arkia password=arki email=arkia@gmail.com         user_role=1 >, Airline created: 
+<id=3 name=arkia country_id=1 user_id=7 >
+2022-03-21 02:36:18,483:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "tu"  was created successfully, his details:   user id:7 email:turkishhhhhh@gmail.com, user role:1  
+2022-03-21 02:36:18,483:AdministratorFacade:create_airline:9412:20756:DEBUG:add new airline is about to happen
+2022-03-21 02:36:18,484:AdministratorFacade:create_airline:9412:20756:ERROR:--FAILED--  Delta we already have Airline company with this name
+2022-03-21 02:36:21,652:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:36:21,652:AdministratorFacade:create_customer:9412:20756:DEBUG:adding customer is about to happen
+2022-03-21 02:36:21,657:AdministratorFacade:create_customer:9412:20756:INFO:--Sucsses--  User created: 
+<id=7 username=efi password=123 email=efi@gmail.com         user_role=2 >, Administrator created: 
+<id=3 first_name=efi last_name=yoni address=None         phone_number=1234343 credit_card_no=4580260111110973 user_id=7>
+2022-03-21 02:36:24,867:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:36:24,867:AdministratorFacade:create_customer:9412:20756:DEBUG:adding customer is about to happen
+2022-03-21 02:36:24,868:AdministratorFacade:create_customer:9412:20756:ERROR:--FAILED--  None a customer with the same Phone number 0502111201is alredy exists.
+2022-03-21 02:36:28,090:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:2  
+2022-03-21 02:36:28,090:AdministratorFacade:create_customer:9412:20756:DEBUG:adding customer is about to happen
+2022-03-21 02:36:28,092:AdministratorFacade:create_customer:9412:20756:ERROR:--FAILED--  None a customer with the Credit card  number 45802601is alredy exists.
+2022-03-21 02:36:31,293:BaseFacade:create_new_user:9412:20756:INFO:--Sucsses-- the user "efi"  was created successfully, his details:   user id:7 email:efi@gmail.com, user role:3  
+2022-03-21 02:36:31,293:AdministratorFacade:create_admin:9412:20756:DEBUG:add new admin is about to happen
+2022-03-21 02:36:31,298:AdministratorFacade:create_admin:9412:20756:INFO:--Sucsses--  User created: 
+<id=7 username=efi password=123 email=efi@gmail.com         user_role=3 >, Administrator created: 
+<id=3 first_name=efi last_name=yoni address=None         phone_number=None credit_card_no=None user_id=7>
+2022-03-21 02:36:34,480:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:34,482:AdministratorFacade:remove_airline:9412:20756:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:36:37,642:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:37,646:AdministratorFacade:remove_airline:9412:20756:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:36:40,835:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:40,837:AdministratorFacade:remove_airline:9412:20756:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:36:43,996:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:43,999:AdministratorFacade:remove_airline:9412:20756:INFO:--Sucsses--  airline company id 2 is removed
+2022-03-21 02:36:47,178:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:47,180:AdministratorFacade:remove_airline:9412:20756:ERROR:--FAILED--    we cant find  this airline company id 4
+2022-03-21 02:36:50,355:AdministratorFacade:remove_airline:9412:20756:DEBUG:remove airline is about to happen
+2022-03-21 02:36:50,358:AdministratorFacade:remove_airline:9412:20756:INFO:--Sucsses--  airline company id 2 is removed
