@@ -26,4 +26,3 @@ init.reset_all_db()
 create_all_entities()
 init.insert_test_db()
 
-print('hello')
