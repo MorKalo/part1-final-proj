@@ -1,7 +1,7 @@
 from datetime import datetime
 from sqlalchemy import Column, Integer,BigInteger, String, DateTime, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import relationship
-from Db_config import Base
+from db.Db_config import Base
 
 class User_Roles(Base):
     __tablename__ = 'user_roles'

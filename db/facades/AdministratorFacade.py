@@ -1,18 +1,12 @@
-import logging
 from BaseFacade import BaseFacade
-from Db_config import local_session, create_all_entities
-from DbRepo import DbRepo
-from Administrator import Administrator
-from Customer import Customer
-from AirlineCompany import AirlineCompany
-from CreateUserAndObjectFailedException import CreateUserAndObjectFailedException
-from User import User
-from Country import Country
-from LoginToken import LoginToken
-from Flight import Flight
-from UsernotauthorizedException import UsernotauthorizedException
-from NameNeedToBeDifrentException import NameNeedToBeDifrentException
-from DataExistException import DataExistException
+from db.tables.Administrator import Administrator
+from db.tables.Customer import Customer
+from db.tables.AirlineCompany import AirlineCompany
+from errors.CreateUserAndObjectFailedException import CreateUserAndObjectFailedException
+from db.tables.Country import Country
+from errors.UsernotauthorizedException import UsernotauthorizedException
+from errors.NameNeedToBeDifrentException import NameNeedToBeDifrentException
+from test.DataExistException import DataExistException
 from logger import Logger
 
 

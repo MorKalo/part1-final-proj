@@ -1,14 +1,11 @@
-import logging
 from BaseFacade import BaseFacade
-from Db_config import local_session, create_all_entities
-from DbRepo import DbRepo
-from Flight import Flight
-from Customer import Customer
-from Ticket import Ticket
-from FlightNotFoundException import FlightNotFoundException
-from NoMoreTicketsForFlightsException import NoMoreTicketsForFlightsException
-from TicketNotFoundException import TicketNotFoundException
-from UsernotauthorizedException import UsernotauthorizedException
+from db.tables.Flight import Flight
+from db.tables.Customer import Customer
+from db.tables.Ticket import Ticket
+from errors.FlightNotFoundException import FlightNotFoundException
+from errors.NoMoreTicketsForFlightsException import NoMoreTicketsForFlightsException
+from errors.TicketNotFoundException import TicketNotFoundException
+from errors.UsernotauthorizedException import UsernotauthorizedException
 from logger import Logger
 
 class CustomerFacade(BaseFacade):

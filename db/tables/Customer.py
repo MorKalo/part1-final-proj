@@ -1,8 +1,8 @@
 from datetime import datetime
 from sqlalchemy import Column, Integer,BigInteger, String, DateTime, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import relationship, backref
-from Db_config import Base
-from User import User
+from db.Db_config import Base
+from db.tables.User import User
 
 class Customer(Base):
     __tablename__ = 'customers'

@@ -1,15 +1,10 @@
 import pytest
 from Init_db import *
 import time
-from DbRepo import DbRepo
-from User import *
-from Customer import *
-from AirlineCompany import *
-from UsernotauthorizedException import UsernotauthorizedException
-from TicketNotFoundException import TicketNotFoundException
-from FlightNotFoundException import FlightNotFoundException
-from NoMoreTicketsForFlightsException import NoMoreTicketsForFlightsException
-from NameNeedToBeDifrentException import NameNeedToBeDifrentException
+from db.DbRepo import DbRepo
+from db.tables.Customer import *
+from db.tables.AirlineCompany import *
+from errors.NameNeedToBeDifrentException import NameNeedToBeDifrentException
 from DataExistException import DataExistException
 
 repo=DbRepo(local_session)

@@ -1,16 +1,12 @@
-import logging
 from BaseFacade import BaseFacade
-from Db_config import local_session, create_all_entities
-from DbRepo import DbRepo
-from Administrator import Administrator
-from Flight import Flight
-from Customer import Customer
-from UserAlreadyExistException import *
-from User import User
-from AirlineCompany import AirlineCompany
-from LoginToken import LoginToken
-from AirLineFacade import AirLineFacade
-from AdministratorFacade import AdministratorFacade
+from db.tables.Administrator import Administrator
+from db.tables.Customer import Customer
+from errors.UserAlreadyExistException import *
+from db.tables.User import User
+from db.tables.AirlineCompany import AirlineCompany
+from db.LoginToken import LoginToken
+from db.facades.AirLineFacade import AirLineFacade
+from db.facades.AdministratorFacade import AdministratorFacade
 from CustomerFacade import CustomerFacade
 from logger import Logger
 

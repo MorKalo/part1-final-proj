@@ -1,15 +1,13 @@
 #NEED TO FINISH: i need to add func get customer?
-import logging
-from DbRepo import DbRepo
-from Db_config import local_session, create_all_entities
+from db.DbRepo import DbRepo
+from db.Db_config import local_session
 from abc import ABC, abstractmethod
-from Flight import Flight
-from AirlineCompany import AirlineCompany
-from Country import Country
-from User import User
-from UserAlreadyExistException import UserAlreadyExistException
+from db.tables.Flight import Flight
+from db.tables.AirlineCompany import AirlineCompany
+from db.tables.Country import Country
+from db.tables.User import User
+from errors.UserAlreadyExistException import UserAlreadyExistException
 from logger import Logger
-from LoginToken import LoginToken
 
 repo = DbRepo(local_session)
 

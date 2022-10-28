@@ -1,21 +1,14 @@
-import sys
-from datetime import datetime
-from DbRepo import DbRepo
-from sqlalchemy import asc, text, desc
-from Flight import Flight
-from Country import Country
-from AirlineCompany import AirlineCompany
-from Customer import Customer
-from User_Roles import User_Roles
-from Ticket import Ticket
-from User import User
-from Administrator import Administrator
-from AdministratorFacade import AdministratorFacade
-from AirLineFacade import AirLineFacade
-from CustomerFacade import CustomerFacade
-from AnonymusFacade import AnonymusFacade
+from db.DbRepo import DbRepo
+from db.tables.Flight import Flight
+from db.tables.Country import Country
+from db.tables.AirlineCompany import AirlineCompany
+from db.tables.Customer import Customer
+from db.tables.User_Roles import User_Roles
+from db.tables.Ticket import Ticket
+from db.tables.User import User
+from db.tables.Administrator import Administrator
 from datetime import *
-from Db_config import local_session, create_all_entities
+from db.Db_config import local_session, create_all_entities
 
 class Init_db():
 

@@ -1,11 +1,11 @@
 import pytest
 from Init_db import *
 import time
-from DbRepo import DbRepo
-from UsernotauthorizedException import UsernotauthorizedException
-from TicketNotFoundException import TicketNotFoundException
-from FlightNotFoundException import FlightNotFoundException
-from NoMoreTicketsForFlightsException import NoMoreTicketsForFlightsException
+from db.DbRepo import DbRepo
+from errors.UsernotauthorizedException import UsernotauthorizedException
+from errors.TicketNotFoundException import TicketNotFoundException
+from errors.FlightNotFoundException import FlightNotFoundException
+from errors.NoMoreTicketsForFlightsException import NoMoreTicketsForFlightsException
 
 
 repo=DbRepo(local_session)

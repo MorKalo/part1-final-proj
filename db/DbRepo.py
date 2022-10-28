@@ -1,12 +1,9 @@
-import sys
-from sqlalchemy import asc, text, desc, delete, update
-from Db_config import local_session
-from AirlineCompany import AirlineCompany
-from Flight import Flight
-from Ticket import Ticket
-import datetime
-import logging
+#from db_repo_p.Db_config import local_session
+from db.tables.AirlineCompany import AirlineCompany
+from db.tables.Flight import Flight
+from db.tables.Ticket import Ticket
 from logger import Logger
+
 
 
 

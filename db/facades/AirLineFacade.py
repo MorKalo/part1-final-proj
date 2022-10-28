@@ -1,11 +1,8 @@
-import logging
-from Db_config import local_session, create_all_entities
-from DbRepo import DbRepo
-from AirlineCompany import AirlineCompany
-from Flight import Flight
-from Country import Country
+from db.tables.AirlineCompany import AirlineCompany
+from db.tables.Flight import Flight
+from db.tables.Country import Country
 from BaseFacade import BaseFacade
-from UsernotauthorizedException import UsernotauthorizedException
+from errors.UsernotauthorizedException import UsernotauthorizedException
 from logger import Logger
 
 class AirLineFacade(BaseFacade):

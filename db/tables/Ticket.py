@@ -1,6 +1,6 @@
 from datetime import datetime
 from sqlalchemy import Table, Column, Integer,BigInteger, String, DateTime, ForeignKey, UniqueConstraint
-from Db_config import Base
+from db.Db_config import Base
 from sqlalchemy.orm import relationship, backref
 
 association_table= Table('flight_customer', Base.metadata,

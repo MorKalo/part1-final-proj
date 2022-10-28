@@ -1,8 +1,8 @@
 from datetime import datetime
 from sqlalchemy import Column, Integer,BigInteger, String, DateTime, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import relationship, backref
-from Db_config import Base
-from Country import Country
+from db.Db_config import Base
+from db.tables.Country import Country
 
 
 class AirlineCompany(Base):
